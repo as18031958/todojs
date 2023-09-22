@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+      <button  class="butt hide" onclick="back()" >Back</button>
+      
+      <!--  -->
+      <div class="Tasklist">
+        <h1><span>Tasks</span><span class="Task">Lists</span></h1>
+        <p id="notask">No Item in the todo list</p>
+        <div class="Taskclick1">
+           <button  onclick="showAddTask()"><i class="fa-solid fa-circle-plus circle_plus"></i></button>
+            <h2>AddItem</h2>
+        </div>
+      </div>
+      <div id="cardcontainer"></div>
+      <div id="singleCard" class="hide"></div>
+    </div>
+     
+      <!-- Add popup  -->
+      <div class="addpopup">
+      <div class="box hide" id="addtaskpopup">
+        <h3>Task Name</h3>
+        <input type="text" id="cardname">
+        <button onclick="addcard()"><i class="fa-solid fa-plus addbutton"></i></button> 
+        <button onclick="hideAddTask()"><i class="fa-solid fa-trash deletebutton"></i></button>
+        
+      </div>
+   
+    </div>
+    <div id="additemPopup" class="box hide"></div>
+
+
+
+    
+    <script src="./todoapp.js"></script>
+</body>
+</html>
